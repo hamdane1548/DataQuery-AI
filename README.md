@@ -5,7 +5,7 @@
 **DataQuery-AI** is an AI-powered ReAct (Reasoning + Acting) agent that interacts with a MySQL database to answer user questions using natural language.
 
 Instead of requiring users to write SQL queries, the agent understands the user's request, reasons about the required steps, executes SQL queries against the database as a tool, and returns a clear, human-readable response.
-
+![img.png](img.png)
 ## Environment Variables
 
 To run this project, you will need to add the following environment variables to your .env file
