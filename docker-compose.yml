@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  mysql:
+    container_name: mysql_dataQueryAi
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: data_query
+      MYSQL_USER: app
+      MYSQL_PASSWORD: app123
+    ports:
+      - "3307:3306"
+    networks:
+      - url_network
+    volumes:
+      - mysql_data:/var/lib/mysql
+networks:
+  url_network:
+    driver: bridge
+
+volumes:
+  mysql_data:
